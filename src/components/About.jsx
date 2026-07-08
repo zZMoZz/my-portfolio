@@ -6,9 +6,9 @@ import './About.css';
 const TABS = ['Experience', 'Skills', 'Education', 'Certification'];
 
 const STATS = [
-  { label: 'Years Experience', value: '5+' },
+  { label: 'Years Experience', value: '0' },
   { label: 'Projects Shipped', value: '30+' },
-  { label: 'Companies', value: '4' },
+  { label: 'Companies', value: '0' },
 ];
 
 function ExperienceTab() {

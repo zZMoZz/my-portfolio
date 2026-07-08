@@ -11,10 +11,6 @@ import {
   FaTwitter,
   FaInstagram,
   FaFacebook,
-  FaCloud,
-  FaLightbulb,
-  FaPalette,
-  FaLaptopCode,
   FaGraduationCap,
 } from 'react-icons/fa';
 import { SiTypescript, SiVite, SiSpring, SiPostgresql } from 'react-icons/si';
@@ -22,8 +18,7 @@ import { SiTypescript, SiVite, SiSpring, SiPostgresql } from 'react-icons/si';
 export const profile = {
   name: 'Mohamed Mohsen',
   roles: ['Software Engineer', 'Backend Developer', 'Open Source Contributor', 'Problem Solver'],
-  tagline:
-    "I'm Mohamed Mohsen, a frontend developer who enjoys turning clean designs into fast, accessible interfaces. Outside of client work, I build and maintain a handful of small open source tools.",
+  tagline: "I've learned that I still have a lot to learn.",
   resumeUrl: '#',
   email: 'zmohamedmohsnz@gmail.com',
   phone: '+201010465679',
@@ -43,46 +38,7 @@ export const socialLinks = [
   { id: 'facebook', icon: FaFacebook, label: 'Facebook', url: 'https://www.facebook.com/mohamed.mohsen.650254' },
 ];
 
-export const experience = [
-  {
-    id: 'nimbus',
-    company: 'Nimbus Cloud',
-    role: 'Senior Frontend Engineer',
-    period: 'Jan 2023 - Present',
-    icon: FaCloud,
-    iconColor: '#6a5cf5',
-    summary:
-      'Leading development of the design system and core dashboard used by 50k+ customers, and mentoring three junior engineers.',
-  },
-  {
-    id: 'brightside',
-    company: 'Brightside Labs',
-    role: 'Frontend Engineer',
-    period: 'Jun 2021 - Dec 2022',
-    icon: FaLightbulb,
-    iconColor: '#f5b942',
-    summary:
-      'Built the customer-facing web app from scratch with React and TypeScript, cutting page load times by 40%.',
-  },
-  {
-    id: 'vega',
-    company: 'Studio Vega',
-    role: 'UI Developer',
-    period: 'Mar 2020 - May 2021',
-    icon: FaPalette,
-    iconColor: '#ff6b9d',
-    summary: 'Translated Figma designs into pixel-perfect, accessible React components for e-commerce clients.',
-  },
-  {
-    id: 'freelance',
-    company: 'Freelance',
-    role: 'Web Developer',
-    period: '2018 - 2020',
-    icon: FaLaptopCode,
-    iconColor: '#4fd1c5',
-    summary: 'Delivered 15+ websites for small businesses, handling everything from design to deployment.',
-  },
-];
+export const experience = [];
 
 export const skills = [
   { id: 'html5', name: 'HTML5', icon: FaHtml5, color: '#e34f26' },
