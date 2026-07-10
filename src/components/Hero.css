@@ -5,7 +5,7 @@
   align-items: center;
   padding: 8rem 0 4rem;
   overflow: hidden;
-  background: radial-gradient(60% 55% at 82% 20%, rgba(106, 92, 245, 0.16) 0%, transparent 70%), var(--bg-0);
+  background: radial-gradient(60% 55% at 82% 20%, rgba(106, 92, 245, 0.16) 0%, transparent 70%), var(--bg-0-veil);
 }
 
 .hero__inner {

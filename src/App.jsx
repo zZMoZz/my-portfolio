@@ -6,6 +6,7 @@ import Projects from './components/Projects.jsx';
 import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
 import Loader from './components/Loader.jsx';
+import GalaxyBackground from './components/GalaxyBackground.jsx';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -20,6 +21,7 @@ function App() {
   return (
     <>
       {isLoading && <Loader onFinish={() => setIsLoading(false)} />}
+      <GalaxyBackground />
       <Navbar />
       <main>
         <Hero />

@@ -16,6 +16,14 @@
   --text-secondary: #9a9cb2;
   --text-muted: #6c6e82;
 
+  /* Galaxy background system */
+  --galaxy-nebula-violet: rgba(122, 108, 255, 0.38);
+  --galaxy-nebula-indigo: rgba(76, 56, 190, 0.44);
+  --galaxy-nebula-gold: rgba(230, 190, 130, 0.16);
+  --galaxy-star: rgba(255, 255, 255, 0.95);
+  --galaxy-star-gold: #f3d9a4;
+  --bg-0-veil: rgba(14, 15, 22, 0.74);
+
   --font-display: 'Montserrat', sans-serif;
   --font-body: 'Montserrat', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;

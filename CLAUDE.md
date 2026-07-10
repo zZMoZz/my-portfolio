@@ -24,7 +24,3 @@ There is no lint, test, or typecheck script configured — don't invent commands
 - **Cross-component communication without state lifting**: `Navbar` and `About` are decoupled via a native `CustomEvent` (`about:set-tab`) on `window` rather than shared state/props — clicking a nav link like "Skills" or "Certifications" dispatches this event, and `About` listens for it to switch its internal tab. Follow this pattern if adding more nav-to-section interactions rather than introducing a state management library.
 - **Assets**: images imported from `src/assets/` (bundled by Vite); static files like `resume.pdf` served from `public/` (referenced by absolute path, e.g. `profile.resumeUrl = '/resume.pdf'`).
 - **`sources/`**: reference design mockups/screenshots (not part of the build).
-
-## Notes
-
-- `index.html`'s `<title>`/meta description still say "Alex Morgan | Frontend Developer" — this is stale placeholder copy left over from a template and doesn't match the actual profile data (Mohamed Mohsen) in `portfolioData.js`.
