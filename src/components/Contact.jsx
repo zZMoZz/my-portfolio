@@ -50,6 +50,7 @@ function Contact() {
                     rel="noopener noreferrer"
                     aria-label={social.label}
                     className="contact-card__social-link"
+                    style={{ '--social-color': social.color }}
                   >
                     <Icon aria-hidden="true" />
                   </a>

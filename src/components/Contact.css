@@ -55,11 +55,35 @@
 
 .contact__cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 310px));
+  grid-template-columns: repeat(3, minmax(0, 310px));
   gap: 1.5rem;
   margin-top: 3rem;
   width: 100%;
   justify-content: center;
+}
+
+@media (max-width: 940px) {
+  .contact__cards {
+    grid-template-columns: repeat(2, minmax(0, 320px));
+  }
+
+  .contact-card:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 680px) {
+  .contact__cards {
+    grid-template-columns: minmax(0, 1fr);
+    width: 90%;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-card:last-child {
+    grid-column: auto;
+  }
 }
 
 .contact-card {
@@ -76,9 +100,11 @@
   transition: border-color 0.2s ease, background-color 0.2s ease;
 }
 
-.contact-card:hover {
-  border-color: var(--accent-light);
-  background: rgba(122, 108, 255, 0.05);
+@media (hover: hover) {
+  .contact-card:hover {
+    border-color: var(--accent-light);
+    background: rgba(122, 108, 255, 0.05);
+  }
 }
 
 .contact-card__icon {
@@ -124,8 +150,10 @@
   transition: color 0.2s ease;
 }
 
-.contact-card__value:hover {
-  color: var(--accent-light);
+@media (hover: hover) {
+  .contact-card__value:hover {
+    color: var(--accent-light);
+  }
 }
 
 .contact-card__socials {
@@ -149,7 +177,6 @@
   background: var(--surface);
   border: 1px solid var(--border-strong);
   color: var(--text-secondary);
-  font-size: 0.95rem;
   line-height: 0;
   transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
 }
@@ -158,9 +185,11 @@
   display: block;
 }
 
-.contact-card__social-link:hover {
-  color: var(--accent-light);
-  border-color: var(--accent-light);
-  background: var(--surface-hover);
+@media (hover: hover) {
+  .contact-card__social-link:hover {
+    color: #ffffff;
+    border-color: var(--social-color, var(--accent-light));
+    background: var(--social-color, var(--accent-light));
+  }
 }
 

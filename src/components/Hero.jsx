@@ -69,7 +69,7 @@ function Hero() {
           <h2 className="hero__role">{displayRole}</h2>
           <p className="hero__tagline">{profile.tagline}</p>
           <div className="hero__actions">
-            <a href={profile.resumeUrl} className="btn btn-primary">
+            <a href={profile.resumeUrl} download="Mohamed_Mohsen_Resume.pdf" className="btn btn-primary">
               Get Resume
             </a>
             <a href="#contact" className="btn btn-secondary">

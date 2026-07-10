@@ -1,30 +1,18 @@
 import {
-  FaHtml5,
-  FaCss3Alt,
-  FaJsSquare,
-  FaReact,
   FaNodeJs,
-  FaSass,
-  FaGitAlt,
   FaGithub,
   FaLinkedin,
   FaTwitter,
   FaInstagram,
   FaFacebook,
-  FaCloud,
-  FaLightbulb,
-  FaPalette,
-  FaLaptopCode,
-  FaGraduationCap,
 } from 'react-icons/fa';
-import { SiTypescript, SiVite, SiSpring, SiPostgresql } from 'react-icons/si';
+import { SiSpring, SiPostgresql } from 'react-icons/si';
 
 export const profile = {
   name: 'Mohamed Mohsen',
   roles: ['Software Engineer', 'Backend Developer', 'Open Source Contributor', 'Problem Solver'],
-  tagline:
-    "I'm Mohamed Mohsen, a frontend developer who enjoys turning clean designs into fast, accessible interfaces. Outside of client work, I build and maintain a handful of small open source tools.",
-  resumeUrl: '#',
+  tagline: "I've learned that I still have a lot to learn.",
+  resumeUrl: '/resume.pdf',
   email: 'zmohamedmohsnz@gmail.com',
   phone: '+201010465679',
 };
@@ -36,105 +24,88 @@ export const heroBadges = [
 ];
 
 export const socialLinks = [
-  { id: 'linkedin', icon: FaLinkedin, label: 'LinkedIn', url: 'https://www.linkedin.com/in/mohamed-mohsen-516792252/' },
-  { id: 'github', icon: FaGithub, label: 'GitHub', url: 'https://github.com/zZMoZz' },
-  { id: 'twitter', icon: FaTwitter, label: 'Twitter', url: 'https://x.com/mohamed_muhsenz' },
-  { id: 'instagram', icon: FaInstagram, label: 'Instagram', url: 'https://www.instagram.com/mohamed_muhsen/' },
-  { id: 'facebook', icon: FaFacebook, label: 'Facebook', url: 'https://www.facebook.com/mohamed.mohsen.650254' },
+  { id: 'linkedin', icon: FaLinkedin, label: 'LinkedIn', url: 'https://www.linkedin.com/in/mohamed-mohsen-516792252/', color: '#0a66c2' },
+  { id: 'github', icon: FaGithub, label: 'GitHub', url: 'https://github.com/zZMoZz', color: '#333333' },
+  { id: 'twitter', icon: FaTwitter, label: 'Twitter', url: 'https://x.com/mohamed_muhsenz', color: '#1da1f2' },
+  { id: 'instagram', icon: FaInstagram, label: 'Instagram', url: 'https://www.instagram.com/mohamed_muhsen/', color: '#e4405f' },
+  { id: 'facebook', icon: FaFacebook, label: 'Facebook', url: 'https://www.facebook.com/mohamed.mohsen.650254', color: '#1877f2' },
 ];
 
-export const experience = [
-  {
-    id: 'nimbus',
-    company: 'Nimbus Cloud',
-    role: 'Senior Frontend Engineer',
-    period: 'Jan 2023 - Present',
-    icon: FaCloud,
-    iconColor: '#6a5cf5',
-    summary:
-      'Leading development of the design system and core dashboard used by 50k+ customers, and mentoring three junior engineers.',
-  },
-  {
-    id: 'brightside',
-    company: 'Brightside Labs',
-    role: 'Frontend Engineer',
-    period: 'Jun 2021 - Dec 2022',
-    icon: FaLightbulb,
-    iconColor: '#f5b942',
-    summary:
-      'Built the customer-facing web app from scratch with React and TypeScript, cutting page load times by 40%.',
-  },
-  {
-    id: 'vega',
-    company: 'Studio Vega',
-    role: 'UI Developer',
-    period: 'Mar 2020 - May 2021',
-    icon: FaPalette,
-    iconColor: '#ff6b9d',
-    summary: 'Translated Figma designs into pixel-perfect, accessible React components for e-commerce clients.',
-  },
-  {
-    id: 'freelance',
-    company: 'Freelance',
-    role: 'Web Developer',
-    period: '2018 - 2020',
-    icon: FaLaptopCode,
-    iconColor: '#4fd1c5',
-    summary: 'Delivered 15+ websites for small businesses, handling everything from design to deployment.',
-  },
-];
+export const experience = [];
 
-export const skills = [
-  { id: 'html5', name: 'HTML5', icon: FaHtml5, color: '#e34f26' },
-  { id: 'css3', name: 'CSS3', icon: FaCss3Alt, color: '#2965f1' },
-  { id: 'sass', name: 'Sass', icon: FaSass, color: '#cc6699' },
-  { id: 'js', name: 'JavaScript', icon: FaJsSquare, color: '#f0db4f' },
-  { id: 'ts', name: 'TypeScript', icon: SiTypescript, color: '#3178c6' },
-  { id: 'react', name: 'React', icon: FaReact, color: '#61dafb' },
-  { id: 'node', name: 'Node.js', icon: FaNodeJs, color: '#8cc84b' },
-  { id: 'vite', name: 'Vite', icon: SiVite, color: '#bd34fe' },
-  { id: 'git', name: 'Git', icon: FaGitAlt, color: '#f05033' },
+export const skillGroups = [
+  {
+    id: 'languages',
+    category: 'Languages',
+    items: ['JavaScript', 'Java', 'Python', 'C++', 'HTML/CSS'],
+  },
+  {
+    id: 'frameworks',
+    category: 'Frameworks',
+    items: ['Node.js', 'Spring'],
+  },
+  {
+    id: 'database',
+    category: 'Database',
+    items: ['PostgreSQL', 'MongoDB'],
+  },
+  {
+    id: 'tools',
+    category: 'Tools',
+    items: ['Git', 'Docker', 'Postman'],
+  },
 ];
 
 export const education = [
   {
-    id: 'btech',
-    school: 'Ridgeway Institute of Technology',
-    degree: 'B.Tech in Computer Science',
-    period: '2016 - 2020',
-    icon: FaGraduationCap,
-  },
-  {
-    id: 'school',
-    school: 'Northfield Public School',
-    degree: 'Higher Secondary Education',
-    period: '2014 - 2016',
-    icon: FaGraduationCap,
+    id: 'tanta-university',
+    school: 'Tanta University',
+    schoolUrl: 'https://tanta.edu.eg/En/default.aspx',
+    degree: 'Bachelor in Computer Engineering & Automatic Control | Very Good | 80%',
+    period: 'Sep 2020 - Jul 2025',
   },
 ];
 
 export const certifications = [
   {
     id: 'cert1',
-    name: 'React - Advanced Concepts',
-    issuer: 'Udemy',
-    year: '2023',
+    name: 'Node.js, Express, Mongodb',
+    issuer: 'Udemy | Jonas Schmedtmann',
+    url: 'https://www.udemy.com/certificate/UC-1a99a725-3503-4221-83ee-bec6b83b2784/',
   },
   {
     id: 'cert2',
-    name: 'JavaScript Algorithms and Data Structures',
-    issuer: 'freeCodeCamp',
-    year: '2021',
+    name: 'Spring Boot 3, Spring 6, Hibernate',
+    issuer: 'Udemy | Chad Darby',
+    url: 'https://www.udemy.com/certificate/UC-ef63b804-79bb-40e8-bba3-871070116617/',
   },
   {
     id: 'cert3',
-    name: 'Responsive Web Design',
-    issuer: 'freeCodeCamp',
-    year: '2020',
+    name: 'Spring Security 6 with JWT, OAUTH2',
+    issuer: 'Udemy | Easy Bytes',
+    url: 'https://www.udemy.com/certificate/UC-7067977a-5247-4390-89ae-17306d2ed321/',
+  },
+  {
+    id: 'cert4',
+    name: 'JavaScript From Zero to Expert',
+    issuer: 'Udemy | Jonas Schmedtmann',
+    url: 'https://www.udemy.com/certificate/UC-08a3ce2f-4315-415f-8ff4-23a7349525f3/',
+  },
+  {
+    id: 'cert5',
+    name: 'Claude Code - Practical Guide',
+    issuer: 'Udemy | Maximilian Schwarzmüller',
+    url: 'https://www.udemy.com/certificate/UC-3b660622-0f4f-4b59-bc98-fcd346960c06/',
+  },
+  {
+    id: 'cert6',
+    name: 'Mathematics for Machine Learning: Linear Algebra',
+    issuer: 'Imperial College London',
+    url: 'https://coursera.org/share/718ca9371c232f0f3a6d67a1ecf6e33a',
   },
 ];
 
-export const projectCategories = ['All', 'Web', 'Android', 'Other'];
+export const projectCategories = ['All', 'Web', 'Other'];
 
 export const projects = [
   {
@@ -173,7 +144,7 @@ export const projects = [
   {
     id: 'drifttimer',
     name: 'DriftTimer',
-    category: 'Android',
+    category: 'Other',
     type: 'Android App',
     description: 'Minimalist pomodoro timer for Android with focus streaks and gentle break reminders.',
     tags: ['Kotlin', 'Android Studio'],

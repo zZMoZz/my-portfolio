@@ -24,9 +24,11 @@
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.footer__top:hover {
-  transform: translateY(-3px);
-  background: var(--accent-light);
+@media (hover: hover) {
+  .footer__top:hover {
+    transform: translateY(-3px);
+    background: var(--accent-light);
+  }
 }
 
 .footer__socials {
@@ -41,9 +43,11 @@
   display: inline-flex;
 }
 
-.footer__socials a:hover {
-  color: var(--accent-light);
-  transform: translateY(-2px);
+@media (hover: hover) {
+  .footer__socials a:hover {
+    color: var(--accent-light);
+    transform: translateY(-2px);
+  }
 }
 
 .footer__divider {

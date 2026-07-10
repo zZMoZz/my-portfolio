@@ -14,7 +14,6 @@ function ProjectCard({ project }) {
           <span />
           <span />
         </div>
-        <div className="project-card__mockup-name">{project.name}</div>
       </div>
 
       <div className="project-card__body">
@@ -38,7 +37,7 @@ function ProjectCard({ project }) {
             className="project-card__github"
           >
             <FaGithub aria-hidden="true" />
-            GitHub Repository
+            GitHub
           </a>
           <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="project-card__live">
             Live preview <FaArrowRight aria-hidden="true" />

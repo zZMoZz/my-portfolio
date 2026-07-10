@@ -5,9 +5,9 @@ import './Navbar.css';
 const NAV_LINKS = [
   { label: 'Home', href: '#hero' },
   { label: 'About', href: '#about' },
-  { label: 'Skills', href: '#about', tab: 'Skills' },
-  { label: 'Certification', href: '#about', tab: 'Certification' },
   { label: 'Projects', href: '#projects' },
+  { label: 'Skills', href: '#about', tab: 'Skills' },
+  { label: 'Certifications', href: '#about', tab: 'Certifications' },
 ];
 
 function Navbar() {

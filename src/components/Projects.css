@@ -64,10 +64,12 @@
   transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
-.project-card:hover {
-  transform: translateY(-6px);
-  border-color: var(--border-strong);
-  box-shadow: 0 24px 40px -24px rgba(0, 0, 0, 0.65);
+@media (hover: hover) {
+  .project-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--border-strong);
+    box-shadow: 0 24px 40px -24px rgba(0, 0, 0, 0.65);
+  }
 }
 
 .project-card__mockup {
@@ -88,19 +90,6 @@
   height: 9px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.55);
-}
-
-.project-card__mockup-name {
-  margin-top: auto;
-  align-self: flex-start;
-  font-family: var(--font-mono);
-  font-weight: 600;
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.92);
-  background: rgba(14, 15, 22, 0.25);
-  padding: 0.3rem 0.7rem;
-  border-radius: 8px;
-  backdrop-filter: blur(2px);
 }
 
 .project-card__body {
@@ -164,9 +153,11 @@
   transition: border-color 0.2s ease, color 0.2s ease;
 }
 
-.project-card__github:hover {
-  border-color: var(--accent-light);
-  color: var(--accent-light);
+@media (hover: hover) {
+  .project-card__github:hover {
+    border-color: var(--accent-light);
+    color: var(--accent-light);
+  }
 }
 
 .project-card__live {
@@ -179,9 +170,11 @@
   transition: color 0.2s ease, gap 0.2s ease;
 }
 
-.project-card__live:hover {
-  color: var(--accent-light);
-  gap: 0.6rem;
+@media (hover: hover) {
+  .project-card__live:hover {
+    color: var(--accent-light);
+    gap: 0.6rem;
+  }
 }
 
 .projects__more {
