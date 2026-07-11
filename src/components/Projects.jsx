@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaGithub, FaArrowRight } from 'react-icons/fa';
+import { FaGithub, FaArrowRight, FaDownload } from 'react-icons/fa';
 import { projects, projectCategories } from '../data/portfolioData';
 import './Projects.css';
 
@@ -8,16 +8,25 @@ const INITIAL_COUNT = 3;
 function ProjectCard({ project }) {
   return (
     <article className="project-card">
-      <div className="project-card__mockup" style={{ background: project.gradient }}>
-        <div className="project-card__mockup-bar">
-          <span />
-          <span />
-          <span />
+      {project.image ? (
+        <div className="project-card__mockup project-card__mockup--image">
+          <img src={project.image} alt={`${project.name} preview`} />
         </div>
-      </div>
+      ) : (
+        <div className="project-card__mockup" style={{ background: project.gradient }}>
+          <div className="project-card__mockup-bar">
+            <span />
+            <span />
+            <span />
+          </div>
+        </div>
+      )}
 
       <div className="project-card__body">
-        <h3 className="project-card__title">{project.name}</h3>
+        <div className="project-card__title-row">
+          <h3 className="project-card__title">{project.name}</h3>
+          {project.year && <span className="project-card__year">{project.year}</span>}
+        </div>
 
         <div className="project-card__tags">
           {project.tags.map((tag) => (
@@ -39,8 +48,22 @@ function ProjectCard({ project }) {
             <FaGithub aria-hidden="true" />
             GitHub
           </a>
-          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="project-card__live">
-            Live preview <FaArrowRight aria-hidden="true" />
+          <a
+            href={project.liveUrl}
+            target={project.download ? undefined : '_blank'}
+            rel="noopener noreferrer"
+            download={project.download || undefined}
+            className="project-card__live"
+          >
+            {project.download ? (
+              <>
+                Download <FaDownload aria-hidden="true" />
+              </>
+            ) : (
+              <>
+                Live preview <FaArrowRight aria-hidden="true" />
+              </>
+            )}
           </a>
         </div>
       </div>
