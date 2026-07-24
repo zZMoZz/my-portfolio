@@ -10,6 +10,7 @@ import { SiSpring, SiPostgresql } from 'react-icons/si';
 import bmiCalculatorImg from '../assets/bmi-calculator.png';
 import pythonCalculatorImg from '../assets/python-calculator.png';
 import htmlCssProjectImg from '../assets/html-css-project.png';
+import phoneStoreInventoryImg from '../assets/phone-store-inventory.png';
 
 export const profile = {
   name: 'Mohamed Mohsen',
@@ -111,6 +112,18 @@ export const certifications = [
 export const projectCategories = ['All', 'Web', 'Other'];
 
 export const projects = [
+  {
+    id: 'phone-store',
+    name: 'Phone Store Management App',
+    category: 'Web',
+    type: 'Full-Stack Web App',
+    year: 2026,
+    description: 'Offline-friendly staff dashboard for a mobile phone store, covering inventory, transactions, services, permissions, backups, exports, bilingual UI, and light/dark themes.',
+    tags: ['React', 'Express', 'SQLite', 'Mantine'],
+    image: phoneStoreInventoryImg,
+    githubUrl: 'https://github.com/zZMoZz/phone-store',
+    liveUrl: 'https://phone-store-production-9847.up.railway.app',
+  },
   {
     id: 'bmi-calculator',
     name: 'BMI Calculator',
